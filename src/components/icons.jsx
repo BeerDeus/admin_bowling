@@ -84,3 +84,38 @@ export function IconMoon({ className }) {
     </Trait>
   );
 }
+
+export function IconActivity({ className }) {
+  return (
+    <Trait className={className}>
+      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+    </Trait>
+  );
+}
+
+export function IconPlus({ className }) {
+  return (
+    <Trait className={className}>
+      <path d="M12 5v14M5 12h14" />
+    </Trait>
+  );
+}
+
+export function IconTrash({ className }) {
+  return (
+    <Trait className={className}>
+      <path d="M4 7h16" />
+      <path d="M9 7V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V7" />
+      <path d="M6 7l1 13.5A1.5 1.5 0 0 0 8.5 22h7a1.5 1.5 0 0 0 1.5-1.5L18 7" />
+    </Trait>
+  );
+}
+
+export function IconPencil({ className }) {
+  return (
+    <Trait className={className}>
+      <path d="M12 20h9" />
+      <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+    </Trait>
+  );
+}

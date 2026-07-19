@@ -5,7 +5,7 @@
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { MODULES } from "../config";
-import { IconBar, IconBowling, IconChevron, IconKaraoke, IconQuiz } from "./icons";
+import { IconActivity, IconBar, IconBowling, IconChevron, IconKaraoke, IconQuiz } from "./icons";
 import ThemeToggle from "./ThemeToggle";
 
 const ICONES = {
@@ -38,6 +38,13 @@ export default function Sidebar() {
           Back-Office
           <small>Bornes Bowling</small>
         </div>
+      </div>
+
+      <div className="sidebar-nav-globale">
+        <NavLink to="/statut" className={({ isActive }) => `sidebar-lien-global${isActive ? " actif" : ""}`}>
+          <IconActivity className="sidebar-module-icone" />
+          Statut système
+        </NavLink>
       </div>
 
       <div className="sidebar-modules">
